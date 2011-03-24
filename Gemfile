@@ -8,7 +8,7 @@ gem 'rails', '3.0.3'
 gem 'mysql2'
 gem 'resque'
 
-gem 'test_private_github_repo', :git => 'git@github.com:crigor/meetup.git'
+gem 'hello_gem', :git => 'git@github.com:crigor/hello_gem.git'
 
 # Use unicorn as the web server
 # gem 'unicorn'
