@@ -11,7 +11,7 @@ gem 'resque'
 gem 'hello_gem', :git => 'git@github.com:crigor/hello_gem.git'
 
 # Use unicorn as the web server
-# gem 'unicorn'
+gem 'unicorn', '1.1.5'
 
 # Deploy with Capistrano
 # gem 'capistrano'
