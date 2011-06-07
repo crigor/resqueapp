@@ -1,3 +1,9 @@
+GIT
+  remote: git@github.com:crigor/hello_gem.git
+  revision: 41d495b7e194e1478b08f0b80b97fd5030a60ffc
+  specs:
+    hello_gem (0.0.1)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -86,6 +92,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  hello_gem!
   mysql2
   rails (= 3.0.3)
   resque
