@@ -13,15 +13,15 @@ def bundle
     sudo "#{$0} _#{EY::Serverside::VERSION}_ install_bundler #{bundler_installer.version}"
 
     @git_ssh = File.open("/tmp/git-ssh", "w")
-    @config = File.open("/tmp/git-ssh-config", "w")
+    @gsc = File.open("/tmp/git-ssh-config", "w")
 
-    @config.write "StrictHostKeyChecking no\n"
-    @config.write "CheckHostIP no\n"
-    @config.write "PasswordAuthentication no\n"
-    @config.write "LogLevel DEBUG\n"
-    @config.write "IdentityFile ~/.ssh/#{c.app}-deploy-key\n"
-    @config.chmod(0600)
-    @config.close
+    @gsc.write "StrictHostKeyChecking no\n"
+    @gsc.write "CheckHostIP no\n"
+    @gsc.write "PasswordAuthentication no\n"
+    @gsc.write "LogLevel DEBUG\n"
+    @gsc.write "IdentityFile ~/.ssh/#{c.app}-deploy-key\n"
+    @gsc.chmod(0600)
+    @gsc.close
 
     @git_ssh.write "#!/bin/sh\n"
     @git_ssh.write "unset SSH_AUTH_SOCK\n"
