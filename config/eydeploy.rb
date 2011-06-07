@@ -12,8 +12,8 @@ def bundle
 
     sudo "#{$0} _#{EY::Serverside::VERSION}_ install_bundler #{bundler_installer.version}"
 
-    @git_ssh = Tempfile.open("git-ssh")
-    @config = Tempfile.open("git-ssh-config")
+    @git_ssh = File.open("/tmp/git-ssh")
+    @config = File.open("/tmp/git-ssh-config")
 
     @config.write "StrictHostKeyChecking no\n"
     @config.write "CheckHostIP no\n"
@@ -41,7 +41,7 @@ def bundle
     ####################################################
     # this is the only line that has been changed:
     #run "cd #{c.release_path} && bundle _#{bundler_installer.version}_ install #{bundler_installer.options}"
-    run "GIT_SSH=#{@git_ssh.path} cd #{c.release_path} && bundle _#{bundler_installer.version}_ install #{bundler_installer.options}'"
+    run "GIT_SSH=/tmp/git-ssh cd #{c.release_path} && bundle _#{bundler_installer.version}_ install #{bundler_installer.options}'"
     #run "exec ssh-agent bash -c 'ssh-add /home/crigor/.ssh/#{c.app}-deploy-key && cd #{c.release_path} && bundle _#{bundler_installer.version}_ install #{bundler_installer.options}'"
   end
 end
