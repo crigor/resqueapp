@@ -12,8 +12,8 @@ def bundle
 
     sudo "#{$0} _#{EY::Serverside::VERSION}_ install_bundler #{bundler_installer.version}"
 
-    @git_ssh = File.open("/tmp/git-ssh")
-    @config = File.open("/tmp/git-ssh-config")
+    @git_ssh = File.open("/tmp/git-ssh", "w")
+    @config = File.open("/tmp/git-ssh-config", "w")
 
     @config.write "StrictHostKeyChecking no\n"
     @config.write "CheckHostIP no\n"
