@@ -25,7 +25,7 @@ def bundle
 
     @git_ssh.write "#!/bin/sh\n"
     @git_ssh.write "unset SSH_AUTH_SOCK\n"
-    @git_ssh.write "ssh -F \"#{@config.path}\" $*\n"
+    @git_ssh.write "ssh -F \"/tmp/git-ssh-config\" $*\n"
     @git_ssh.chmod(0700)
     # NB: this file _must_ be closed before git looks at it.
     #
