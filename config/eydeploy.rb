@@ -15,6 +15,6 @@ def bundle
     ####################################################
     # this is the only line that has been changed:
     #run "cd #{c.release_path} && bundle _#{bundler_installer.version}_ install #{bundler_installer.options}"
-    run "exec ssh-agent bash -c 'ssh-add /home/deploy/.ssh/#{c.app}-deploy-key && cd #{c.release_path} && bundle _#{bundler_installer.version}_ install #{bundler_installer.options}'"
+    run "exec ssh-agent bash -c 'ssh-add /home/crigor/.ssh/#{c.app}-deploy-key && cd #{c.release_path} && bundle _#{bundler_installer.version}_ install #{bundler_installer.options}'"
   end
 end
