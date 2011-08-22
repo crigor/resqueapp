@@ -32,3 +32,6 @@ gem 'unicorn', '1.1.5'
 # group :development, :test do
 #   gem 'webrat'
 # end
+group :development do
+  gem 'autotest-growl' if RUBY_PLATFORM =~ /darwin/i
+end
