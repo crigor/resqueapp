@@ -94,6 +94,7 @@ PLATFORMS
 
 DEPENDENCIES
   autotest-growl
+  bundler (= 1.0.18)
   hello_gem!
   mysql2
   rails (= 3.0.3)

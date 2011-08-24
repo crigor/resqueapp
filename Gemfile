@@ -12,6 +12,7 @@ gem 'hello_gem', :git => 'git@github.com:crigor/hello_gem.git'
 
 # Use unicorn as the web server
 gem 'unicorn', '1.1.5'
+gem 'bundler', '1.0.18'
 
 # Deploy with Capistrano
 # gem 'capistrano'
