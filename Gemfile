@@ -34,5 +34,5 @@ gem 'bundler', '1.0.18'
 #   gem 'webrat'
 # end
 group :development do
-  gem 'autotest-growl' #if RUBY_PLATFORM =~ /darwin/i
+  gem 'autotest-growl' if RUBY_PLATFORM =~ /darwin/i
 end
