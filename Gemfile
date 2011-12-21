@@ -8,11 +8,11 @@ gem 'rails', '3.0.3'
 gem 'mysql2'
 gem 'resque'
 
-gem 'hello_gem', :git => 'git@github.com:crigor/hello_gem.git'
+#gem 'hello_gem', :git => 'git@github.com:crigor/hello_gem.git'
 
 # Use unicorn as the web server
 gem 'unicorn', '1.1.5'
-gem 'bundler', '1.0.18'
+gem 'bundler', '1.0.21'
 
 # Deploy with Capistrano
 # gem 'capistrano'
