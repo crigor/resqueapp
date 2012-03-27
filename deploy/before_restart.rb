@@ -2,9 +2,8 @@
 #raise "error on deploy hook"
 #run "sed -i.BK 's/URL/http:\/\/localhost:3000\/foo/g' #{release_path}/lib/test_url.rb"
 
+foobar
 def foobar
   run "sed -i.BK 's/URL/http\\/\\//g' #{release_path}/lib/test_url.rb"
 end
-
-foobar
 
