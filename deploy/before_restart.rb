@@ -7,6 +7,8 @@ def foobar
 end
 
 on_app_servers_and_utilities do
-  foobar
+  #foobar
 end
+
+run "curl -sS http://ec2-107-20-199-117.compute-1.amazonaws.com/nr -X POST -H \"X-Api-Key: foobar\""
 
