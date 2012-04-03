@@ -1,4 +1,5 @@
 Resqueapp::Application.routes.draw do
+  match 'nr' => "nr#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
