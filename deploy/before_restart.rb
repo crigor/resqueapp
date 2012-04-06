@@ -10,5 +10,5 @@ on_app_servers_and_utilities do
   #foobar
 end
 
-run "curl -sS http://localhost/nr -X POST -H \"X-Api-Key: foobaz\""
+#run "curl -sS http://localhost/nr -X POST -H \"X-Api-Key: foobaz\""
 
