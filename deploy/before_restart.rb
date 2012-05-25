@@ -6,9 +6,9 @@ def foobar
   run "sed -i.BK 's/URL/http\\/\\//g' #{release_path}/lib/test_url.rb"
 end
 
-on_app_servers_and_utilities do
+#on_app_servers_and_utilities do
   #foobar
-end
+#end
 
 #run "curl -sS http://localhost/nr -X POST -H \"X-Api-Key: foobaz\""
 
