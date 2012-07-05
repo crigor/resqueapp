@@ -1,6 +1,8 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.3'
+gem 'newrelic_rpm'
+gem 'ey_config'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -34,5 +36,5 @@ gem 'bundler', '1.0.21'
 #   gem 'webrat'
 # end
 group :development do
-  gem 'autotest-growl' #if RUBY_PLATFORM =~ /darwin/i
+  #gem 'autotest-growl' #if RUBY_PLATFORM =~ /darwin/i
 end
